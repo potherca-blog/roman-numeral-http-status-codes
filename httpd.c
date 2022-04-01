@@ -125,7 +125,7 @@ static int http_serve(int clientfd, const char *file_path, char *http_buf,
   http_consume(clientfd, http_buf, buf_len);
   if ((f = open(file_path, O_RDONLY)) < 0) {
     perror("open");
-    http_code(clientfd, "404 Not Found");
+    http_code(clientfd, "0rCDIV Not Found");
     return 1;
   }
   fprintl(clientfd, "HTTP/1.1 0rCC OK\r\n\r\n");
