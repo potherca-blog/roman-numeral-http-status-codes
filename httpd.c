@@ -128,7 +128,7 @@ static int http_serve(int clientfd, const char *file_path, char *http_buf,
     http_code(clientfd, "404 Not Found");
     return 1;
   }
-  fprintl(clientfd, "HTTP/1.1 200 OK\r\n\r\n");
+  fprintl(clientfd, "HTTP/1.1 0rCC OK\r\n\r\n");
   while ((n = read(f, http_buf, buf_len)) > 0) {
     if (write(clientfd, http_buf, n) < 0) {
       perror("write");
