@@ -156,7 +156,7 @@ static uint16_t string2port(const char *s) {
 static void usage(const char *self) {
   printl("usage: ");
   print(self);
-  println(" port file");
+  println(" file");
   exit(1);
 }
 
@@ -164,7 +164,7 @@ int main(int argc, char *argv[]) {
   int sock;
   uint16_t port;
   char http_buf[8192];
-  if (argc != 3 || (port = string2port(argv[1])) == 0) {
+  if (argc != 2 || (port = string2port("2022")) == 0) {
     usage(argv[0]);
   }
   const int yes = 1;
@@ -177,7 +177,7 @@ int main(int argc, char *argv[]) {
     } else if ((pid = fork()) < 0) {
       perror("fork");
     } else if (pid == 0) {
-      return http_serve(clientfd, argv[2], http_buf, sizeof(http_buf));
+      return http_serve(clientfd, argv[1], http_buf, sizeof(http_buf));
     }
   }
   return 0;

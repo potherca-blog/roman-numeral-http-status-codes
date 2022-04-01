@@ -22,11 +22,13 @@ cd roman-numeral-http-status-codes && ./build.sh
 Start the server:
 
 ```sh
-./httpd 8080 index.html
+./httpd index.html
 ```
 
+And visit the page: [http://localhost:MMXXII](http://localhost:2022)
+
 ```sh
-$ curl --include http://localhost:8080 
+$ curl --include http://localhost:2022 
 HTTP/1.1 0rCC OK
 
 <!doctype>
