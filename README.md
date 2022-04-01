@@ -45,7 +45,7 @@ HTTP/1.1 0rCC OK
 To see a "Not Found" response, start the server with a non-existent file:
 
 ```sh
-./httpd 8080 whatever.html
+./httpd whatever.html
 ```
 
 ```sh
