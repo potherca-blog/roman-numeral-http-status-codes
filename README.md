@@ -6,7 +6,7 @@ This project includes a simple webserver, fork from [nolibc-httpd](https://githu
 with the status code replaced with the corresponding roman numeral.
 
 To make sure we still adhere to the HTTP spec, we use the `0r` prefix for the status code.
-Thank @ylebre for this suggestion!
+Thanks [@ylebre](https://github.com/ylebre) for this suggestion!
 
 ## Install
 
