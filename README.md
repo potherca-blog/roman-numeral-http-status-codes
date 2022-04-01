@@ -25,7 +25,13 @@ Start the server:
 ./httpd index.html
 ```
 
-And visit the page: [http://localhost:MMXXII](http://localhost:2022)
+Visit the page: [http://localhost:MMXXII](http://localhost:2022) and, as you can see, the response is "OK".
+
+![image](https://user-images.githubusercontent.com/195757/161277345-872b62ba-e497-43b3-8c10-149d741a150f.png)
+
+Sadly the browser does not show Roman Numerals, but the status is there!
+
+Use `curl` to see it:
 
 ```sh
 $ curl --include http://localhost:2022 
