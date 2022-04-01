@@ -34,7 +34,7 @@ Sadly the browser does not show Roman Numerals, but the status is there!
 Use `curl` to see it:
 
 ```sh
-$ curl --include http://localhost:2022 
+$ curl --include http://localhost:MMXXII
 HTTP/1.1 0rCC OK
 
 <!doctype>
@@ -49,7 +49,7 @@ To see a "Not Found" response, start the server with a non-existent file:
 ```
 
 ```sh
-curl --include http://localhost:8080 
+curl --include http://localhost:MMXXII 
 HTTP/1.1 0rCDIV Not Found
 ```
 
